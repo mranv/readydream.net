@@ -5,10 +5,10 @@ if( ! empty( $_POST['email'] ) ) {
 	$enable_smtp = 'yes'; // yes OR no
 
 	// Email Receiver Address
-	$receiver_email = 'noreply@24ifix.shop';
+	$receiver_email = 'info@readydream.net';
 
 	// Email Receiver Name for SMTP Email
-	$receiver_name 	= 'No Reply';
+	$receiver_name 	= 'Ready Dream';
 
 	// Email Subject
 	$subject = 'Contact form details';
@@ -88,7 +88,7 @@ if( ! empty( $_POST['email'] ) ) {
 			<body>
 				<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
 				<tr>
-				<td colspan="2" align="center" valign="top"><img style="margin-top: 15px;" src="http://www.yourdomain.com/images/logo-email.png" ></td>
+				<td colspan="2" align="center" valign="top"><img style="margin-top: 15px;" src="http://readydream.net/images/demo-real-estate-logo-black.png" ></td>
 				</tr>
 				<tr>
 				<td width="50%" align="right">&nbsp;</td>
@@ -136,12 +136,12 @@ if( ! empty( $_POST['email'] ) ) {
 			$mail = new PHPMailer\PHPMailer\PHPMailer();
 
 			$mail->isSMTP();
-			$mail->Host     = 'smtp.hostinger.com'; // Your SMTP Host
+			$mail->Host     = 'smtp-mail.outlook.com'; // Your SMTP Host
 			$mail->SMTPAuth = true;
-			$mail->Username = 'noreply@24ifix.shop'; // Your Username
-			$mail->Password = 'Anubhav@321'; // Your Password
-			$mail->SMTPSecure = 'ssl'; // Your Secure Connection
-			$mail->Port     = 465; // Your Port
+			$mail->Username = 'info@readydream.net'; // Your Username
+			$mail->Password = 'TGInstaller@2011'; // Your Password
+			$mail->SMTPSecure = 'starttls'; // Your Secure Connection
+			$mail->Port     = 587; // Your Port
 			$mail->setFrom( $fields['Email'], $fields['Name'] );
 			
 			foreach( $toemailaddresses as $toemailaddress ) {
