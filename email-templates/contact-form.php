@@ -5,7 +5,7 @@ if( ! empty( $_POST['email'] ) ) {
 	$enable_smtp = 'yes'; // yes OR no
 
 	// Email Receiver Address
-	$receiver_email = 'info@readydream.net';
+	$receiver_email = 'iamanubhavgain@gmail.com';
 
 	// Email Receiver Name for SMTP Email
 	$receiver_name 	= 'Ready Dream';
@@ -136,12 +136,12 @@ if( ! empty( $_POST['email'] ) ) {
 			$mail = new PHPMailer\PHPMailer\PHPMailer();
 
 			$mail->isSMTP();
-			$mail->Host     = 'smtp-mail.outlook.com'; // Your SMTP Host
+			$mail->Host     = 'smtp.gmail.com'; // Your SMTP Host
 			$mail->SMTPAuth = true;
-			$mail->Username = 'info@readydream.net'; // Your Username
-			$mail->Password = 'TGInstaller@2011'; // Your Password
-			$mail->SMTPSecure = 'starttls'; // Your Secure Connection
-			$mail->Port     = 587; // Your Port
+			$mail->Username = 'iamanubhavgain@gmail.com'; // Your Username
+			$mail->Password = 'yyvwjzwgcdmolndo'; // Your Password
+			$mail->SMTPSecure = 'ssl'; // Your Secure Connection
+			$mail->Port     = 465; // Your Port
 			$mail->setFrom( $fields['Email'], $fields['Name'] );
 			
 			foreach( $toemailaddresses as $toemailaddress ) {

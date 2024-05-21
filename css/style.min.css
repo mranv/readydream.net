@@ -9477,7 +9477,7 @@ button:focus {
   display: inline-block;
 }
 .top-space-margin {
-  margin-top: 96px;
+  margin-top: 1px;
 }
 .top-space-padding {
   padding-top: 96px;
